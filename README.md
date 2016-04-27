@@ -1,0 +1,2 @@
+# AttributeDemo
+This demo shows how to use C# attributes for authorization in a ASP.net application (though for simplicity, this is a console application). This is not how you should do authorization in a production application since there is already an authorize attribute available in ASP.NET, but the demo should assist in understanding attributes without sticking to abstract "demo" types of objects which can be confusing.
