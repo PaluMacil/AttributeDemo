@@ -18,7 +18,7 @@ namespace AttributeDemo
             {
                 if (attrib is AuthorizeAttribute)
                 {
-                    allowedRoles = ((AuthorizeAttribute)attrib).allowedRoles;
+                    allowedRoles = ((AuthorizeAttribute)attrib).AllowedRoles;
                 }
             }
             if (allowedRoles != null && !allowedRoles.Contains(context.Role))

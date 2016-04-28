@@ -9,11 +9,11 @@ namespace AttributeDemo
     [AttributeUsage(AttributeTargets.Class)]
     public class AuthorizeAttribute : Attribute
     {
-        public Roles[] allowedRoles { get; set; }
+        public Roles[] AllowedRoles { get; set; }
 
         public AuthorizeAttribute(Roles[] r)
         {
-            allowedRoles = r;
+            AllowedRoles = r;
         }
     }
 }
