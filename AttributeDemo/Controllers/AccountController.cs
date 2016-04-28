@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace AttributeDemo
-{//new int [] { 0, 0, 0 };
-    [Authorize(new Roles[] {Roles.Normal, Roles.Admin})]
+{
+    [Authorize(Roles.Normal, Roles.Admin)]
     public class AccountController : Controller
     {
         public AccountController(Session context)

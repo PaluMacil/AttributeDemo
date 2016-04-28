@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AttributeDemo
 {
-    [Authorize(new Roles[] { Roles.Anonymous, Roles.Normal, Roles.Admin })]
+    [Authorize(Roles.Anonymous, Roles.Normal, Roles.Admin)]
     public class HomeController : Controller
     {
         public HomeController(Session context)

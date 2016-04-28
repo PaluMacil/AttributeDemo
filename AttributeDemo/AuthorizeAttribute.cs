@@ -11,7 +11,7 @@ namespace AttributeDemo
     {
         public Roles[] AllowedRoles { get; set; }
 
-        public AuthorizeAttribute(Roles[] r)
+        public AuthorizeAttribute(params Roles[] r)
         {
             AllowedRoles = r;
         }
